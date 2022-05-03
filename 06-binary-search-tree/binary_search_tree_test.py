@@ -28,7 +28,7 @@ class TestBST(unittest.TestCase):
         BST = BinarySearchTree()
         BST.insert(2)
         BST.insert(1)
-        self.assertEqual(BST.left.value, 1)
+        self.assertEqual(BST.root.left.value, 1)
 
     def test_4(self):
         """
@@ -37,7 +37,7 @@ class TestBST(unittest.TestCase):
         BST = BinarySearchTree()
         BST.insert(1)
         BST.insert(2)
-        self.assertEqual(BST.right.value, 2)
+        self.assertEqual(BST.root.right.value, 2)
     
     def test_5(self):
         """
